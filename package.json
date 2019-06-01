@@ -1,0 +1,9 @@
+{
+    "name": "zhayizha",
+    "version": "0.1.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "package":"electron-packager . zhayizha --out=../zhayizhaApp --platform=win32 --arch=x64 --electronVersion=5.0.2 --overwrite --asar --icon=icon.ico"
+    }
+  }
