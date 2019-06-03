@@ -28,7 +28,6 @@ function getScreenImage() {
       sources.forEach(function (source) {
         if (source.name === 'Entire screen' || source.name === 'Screen 1') {
           const screenshotPath = path.join(__dirname, 'screenshot.png')
-          console.log(source)
           fs.writeFile(screenshotPath, source.thumbnail.toPNG(), function (error) {
             if (error) return console.log(error)
             let size = source.thumbnail.getSize()

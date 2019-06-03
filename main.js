@@ -45,7 +45,7 @@ function createWindow () {
     win = null
   })
 
-  appIcon = new Tray(__dirname+'/icon.png')
+  appIcon = new Tray(__dirname+'/assets/icon.png')
   const contextMenu = Menu.buildFromTemplate([
     {
         label: '是否开启',
